@@ -48,7 +48,7 @@ alive_logo = (
 )
     
 
-@pyram("speedtest", ram)
+@pyram("speedtest", "")
 async def speed_test(client: Client, message: Message):
     new_msg = await edit_or_reply(message, "`Running speed test . . .`")
     spd = speedtest.Speedtest()
@@ -80,7 +80,7 @@ async def speed_test(client: Client, message: Message):
     )
 
 
-@pyram("dc", ram)
+@pyram("dc", "")
 async def nearest_dc(client: Client, message: Message):
     dc = await client.send(functions.help.GetNearestDc())
     await edit_or_reply(
@@ -89,7 +89,7 @@ async def nearest_dc(client: Client, message: Message):
 
 
 @Client.on_message(filters.command("ceping", ["."]) & filters.user(DEVS) & ~filters.me)
-@pyram("pink", ram)
+@pyram("pink", "")
 async def pingme(client: Client, message: Message):
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
@@ -116,7 +116,7 @@ async def pingme(client: Client, message: Message):
 
 
 @Client.on_message(filters.command("dping", ["."]) & filters.user(DEVS) & ~filters.me)
-@pyram("ping", ram)
+@pyram("ping", "")
 async def module_ping(client: Client, message: Message):
     rams = await edit_or_reply(message, "✨")
     await asyncio.sleep(2)
@@ -137,7 +137,7 @@ async def module_ping(client: Client, message: Message):
             print(f"{e}")
 
 
-@pyram("alive", ram)
+@pyram("alive", "")
 async def module_alive(client: Client, message: Message):
     rams = await edit_or_reply(message, "💫")
     await asyncio.sleep(2)
@@ -158,7 +158,7 @@ async def module_alive(client: Client, message: Message):
             print(f"{e}")
 
 
-@pyram("repo", ram)
+@pyram("repo", "")
 async def repo_alive(client: Client, message: Message):
     rams = await edit_or_reply(message, "Sebentar....✨")
     cdm = message.command
