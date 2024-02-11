@@ -108,7 +108,7 @@ async def phase4(message):
         await asyncio.sleep(SLEEP)
 
 
-@pyram(["heart", "love"], ram)
+@pyram(["heart", "love"], "")
 async def hearts(client: Client, message: Message):
     await phase1(message)
     await asyncio.sleep(SLEEP * 3)
@@ -121,14 +121,14 @@ async def hearts(client: Client, message: Message):
     await message.edit("❤️ I Love You <3")
 
 
-@pyram("loveyou", ram)
+@pyram("loveyou", "")
 async def _(client: Client, message: Message):
     noble = random.randint(1, len(NOBLE) - 2)
     reply_text = NOBLE[noble]
     await edit_or_reply(message, reply_text)
 
 
-@pyram("wink", ram)
+@pyram("wink", "")
 async def wink(client: Client, message: Message):
     hmm_s = "https://some-random-api.ml/animu/wink"
     r = requests.get(url=hmm_s).json()
@@ -137,7 +137,7 @@ async def wink(client: Client, message: Message):
     await message.delete()
 
 
-@pyram("hug", ram)
+@pyram("hug", "")
 async def hug(client: Client, message: Message):
     hmm_s = "https://some-random-api.ml/animu/hug"
     r = requests.get(url=hmm_s).json()
@@ -146,7 +146,7 @@ async def hug(client: Client, message: Message):
     await message.delete()
 
 
-@pyram("pat", ram)
+@pyram("pat", "")
 async def pat(client: Client, message: Message):
     hmm_s = "https://some-random-api.ml/animu/pat"
     r = requests.get(url=hmm_s).json()
@@ -155,7 +155,7 @@ async def pat(client: Client, message: Message):
     await message.delete()
 
 
-@pyram("pikachu", ram)
+@pyram("pikachu", "")
 async def pikachu(client: Client, message: Message):
     hmm_s = "https://some-random-api.ml/img/pikachu"
     r = requests.get(url=hmm_s).json()
@@ -170,7 +170,7 @@ async def pikachu(client: Client, message: Message):
     await message.delete()
 
 
-@pyram("hmm", ram)
+@pyram("hmm", "")
 async def hello_world(client: Client, message: Message):
     mg = await edit_or_reply(
         message,
@@ -179,7 +179,7 @@ async def hello_world(client: Client, message: Message):
 
 
 
-@pyram("brain", ram)
+@pyram("brain", "")
 async def pijtau(client: Client, message: Message):
     if message.forward_from:
         return
@@ -208,7 +208,7 @@ async def pijtau(client: Client, message: Message):
         await message.edit(animation_chars[i % 14])
 
 
-@pyram("bomb", ram)
+@pyram("bomb", "")
 async def gahite(client: Client, message: Message):
     if message.forward_from:
         return
@@ -234,7 +234,7 @@ async def gahite(client: Client, message: Message):
     await asyncio.sleep(2)
 
 
-@pyram("call", ram)
+@pyram("call", "")
 async def hajqag(client: Client, message: Message):
     if message.forward_from:
         return
@@ -266,7 +266,7 @@ async def hajqag(client: Client, message: Message):
         await message.edit(animation_chars[i % 18])
 
 
-@pyram("kill", ram)
+@pyram("kill", "")
 async def gahah(client: Client, message: Message):
     if message.forward_from:
         return
@@ -292,7 +292,7 @@ async def gahah(client: Client, message: Message):
         await message.edit(animation_chars[i % 12])
 
 
-@pyram("wtf", ram)
+@pyram("wtf", "")
 async def gagahkah(client: Client, message: Message):
     if message.forward_from:
         return
@@ -312,7 +312,7 @@ async def gagahkah(client: Client, message: Message):
         await message.edit(animation_chars[i % 5])
 
 
-@pyram("ding", ram)
+@pyram("ding", "")
 async def gkahgagw(client: Client, message: Message):
     animation_interval = 0.3
     animation_ttl = range(0, 30)
@@ -337,7 +337,7 @@ async def gkahgagw(client: Client, message: Message):
         await message.edit(animation_chars[i % 10])
 
 
-@pyram("hypo", ram)
+@pyram("hypo", "")
 async def okihakga(client: Client, message: Message):
     if message.forward_from:
         return
@@ -366,7 +366,7 @@ async def okihakga(client: Client, message: Message):
         await message.edit(animation_chars[i % 15])
 
 
-@pyram(["gangsta", "gangstar"], ram)
+@pyram(["gangsta", "gangstar"], "")
 async def gajjajay(client: Client, message: Message):
     await message.edit("EVERyBOdy")
     await asyncio.sleep(0.3)
@@ -385,7 +385,7 @@ async def gajjajay(client: Client, message: Message):
     await message.edit("EVERyBOdy iZ GangSTur UNtIL I ArRivE 🔥🔥🔥")
 
 
-@pyram("charging", ram)
+@pyram("charging", "")
 async def timer_blankx(client: Client, message: Message):
     txt = (
         message.text[10:]
@@ -404,7 +404,7 @@ async def timer_blankx(client: Client, message: Message):
     )
 
 
-@pyram(["kocok", "coli"], ram)
+@pyram(["kocok", "coli"], "")
 async def kocok(client: Client, message: Message):
     e = await edit_or_reply(message, "8✊===D")
     await e.edit("8=✊==D")
@@ -438,7 +438,7 @@ async def kocok(client: Client, message: Message):
     await e.edit("😭😭😭😭")
 
 
-@pyram(["fuck", "fucek"], ram)
+@pyram(["fuck", "fucek"], "")
 async def ngefuck(client: Client, message: Message):
     e = await edit_or_reply(message, ".                       /¯ )")
     await e.edit(".                       /¯ )\n                      /¯  /")
@@ -468,7 +468,7 @@ async def ngefuck(client: Client, message: Message):
     )
 
 
-@pyram("hack", ram)
+@pyram("hack", "")
 async def hak(client: Client, message: Message):
     await message.edit_text("Looking for WhatsApp databases in targeted person...")
     await asyncio.sleep(2)
@@ -527,7 +527,7 @@ async def hak(client: Client, message: Message):
     )
 
 
-@pyram(["kontol", "kntl"], ram)
+@pyram(["kontol", "kntl"], "")
 async def kontol(client: Client, message: Message):
     emoji = get_text(message)
     kontol = MEMES.GAMBAR_KONTOL
@@ -536,7 +536,7 @@ async def kontol(client: Client, message: Message):
     await message.edit(kontol)
 
 
-@pyram(["penis", "dick"], ram)
+@pyram(["penis", "dick"], "")
 async def titid(client: Client, message: Message):
     emoji = get_text(message)
     titid = MEMES.GAMBAR_TITIT
@@ -545,7 +545,7 @@ async def titid(client: Client, message: Message):
     await message.edit(titid)
 
 
-@pyram("dino", ram)
+@pyram("dino", "")
 async def adadino(client: Client, message: Message):
     typew = await edit_or_reply(message, "`DIN DINNN.....`")
     await asyncio.sleep(1)
@@ -602,7 +602,7 @@ async def adadino(client: Client, message: Message):
     await typew.edit("`-TAMAT-`")
 
 
-@pyram(["sayang", "syg"], ram)
+@pyram(["sayang", "syg"], "")
 async def zeyenk(client: Client, message: Message):
     e = await edit_or_reply(message, "I LOVEE YOUUU 💕")
     await e.edit("💝💘💓💗")
@@ -630,7 +630,7 @@ async def zeyenk(client: Client, message: Message):
     await e.edit("SAYANG KAMU💞")
 
 
-@pyram(["gabut", "gbt"], ram)
+@pyram(["gabut", "gbt"], "")
 async def menggabut(client: Client, message: Message):
     e = await edit_or_reply(message, "`PERNAAHHHHH KAHHH KAUUU MENGIRA`")
     await e.edit("`SEPEEERTIIIII APAAAA BENTUKKKKKKK CINTAAAA`")
@@ -833,7 +833,7 @@ async def menggabut(client: Client, message: Message):
     await e.edit("`GABUT`")
 
 
-@pyram(["heli", "helicopter"], ram)
+@pyram(["heli", "helicopter"], "")
 async def helikopter(client: Client, message: Message):
     await edit_or_reply(
         message,
@@ -856,7 +856,7 @@ async def helikopter(client: Client, message: Message):
     )
 
 
-@pyram("tembak", ram)
+@pyram("tembak", "")
 async def dornembak(client: Client, message: Message):
     await edit_or_reply(
         message,
@@ -864,7 +864,7 @@ async def dornembak(client: Client, message: Message):
     )
 
 
-@pyram("bundir", ram)
+@pyram("bundir", "")
 async def ngebundir(client: Client, message: Message):
     await edit_or_reply(
         message,
@@ -885,7 +885,7 @@ async def ngebundir(client: Client, message: Message):
     )
 
 
-@pyram(["awk", "tawa"], ram)
+@pyram(["awk", "tawa"], "")
 async def awikwok(client: Client, message: Message):
     await edit_or_reply(
         message,
@@ -897,7 +897,7 @@ async def awikwok(client: Client, message: Message):
     )
 
 
-@pyram("y", ram)
+@pyram("y", "")
 async def ysaja(client: Client, message: Message):
     await edit_or_reply(
         message,
@@ -917,7 +917,7 @@ async def ysaja(client: Client, message: Message):
     )
 
 
-@pyram("tank", ram)
+@pyram("tank", "")
 async def tank(client: Client, message: Message):
     await edit_or_reply(
         message,
@@ -928,7 +928,7 @@ async def tank(client: Client, message: Message):
     )
 
 
-@pyram("babi", ram)
+@pyram("babi", "")
 async def babi(client: Client, message: Message):
     await edit_or_reply(
         message,
@@ -943,7 +943,7 @@ async def babi(client: Client, message: Message):
     )
 
 
-@pyram(["ajg", "anjing"], ram)
+@pyram(["ajg", "anjing"], "")
 async def anjg(client: Client, message: Message):
     await edit_or_reply(
         message,
@@ -956,7 +956,7 @@ async def anjg(client: Client, message: Message):
     )
 
 
-@pyram("nah", ram)
+@pyram("nah", "")
 async def nahlove(client: Client, message: Message):
     typew = await edit_or_reply(
         message, "`\n(\\_/)`" "`\n(●_●)`" "`\n />💖 *Ini Buat Kamu`"
@@ -965,7 +965,7 @@ async def nahlove(client: Client, message: Message):
     await typew.edit("`\n(\\_/)`" "`\n(●_●)`" "`\n💖<\\  *Tapi Bo'ong`")
 
 
-@pyram("santet", ram)
+@pyram("santet", "")
 async def santet(client: Client, message: Message):
     typew = await edit_or_reply(message, "`Mengaktifkan Perintah Santet Online....`")
     await asyncio.sleep(2)
