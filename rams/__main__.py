@@ -11,7 +11,7 @@ from rams.modules import ALL_MODULES
 
 
 MSG_ON = """
-🔥 **KanePyro Menyala** 🔥
+🔥 **Kane Pyro Menyala** 🔥
 ━───────╯⇕╰───────━
 🤖 **Userbot Version -** `{}`
 ⚜️ prefixes: ? ! , . *
@@ -30,7 +30,7 @@ async def main():
             ids.append(bot.me.id)
             await bot.join_chat("GeezRam")
             await bot.join_chat("secretuo")
-            await bot.join_chat("GeezSupport")
+            await bot.join_chat("ldaddystore")
             await bot.join_chat("ucelbotk")
             try:
                 await bot.send_message(
