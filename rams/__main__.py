@@ -28,9 +28,9 @@ async def main():
             await bot.start()
             bot.me = await bot.get_me()
             ids.append(bot.me.id)
-            await bot.join_chat("GeezRam")
+            await bot.join_chat("daddyystore")
             await bot.join_chat("secretuo")
-            await bot.join_chat("ldaddystore")
+            await bot.join_chat("proofdaddys")
             await bot.join_chat("ucelbotk")
             try:
                 await bot.send_message(
