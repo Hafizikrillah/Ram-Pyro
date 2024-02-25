@@ -897,7 +897,7 @@ async def awikwok(client: Client, message: Message):
     )
 
 
-@pyram("y", "")
+@pyram("y", .)
 async def ysaja(client: Client, message: Message):
     await edit_or_reply(
         message,
@@ -928,7 +928,7 @@ async def tank(client: Client, message: Message):
     )
 
 
-@pyram("babi", "")
+@pyram("babi", .)
 async def babi(client: Client, message: Message):
     await edit_or_reply(
         message,
@@ -943,7 +943,7 @@ async def babi(client: Client, message: Message):
     )
 
 
-@pyram(["ajg", "anjing"], "")
+@pyram(["ajg", "anjing"], .)
 async def anjg(client: Client, message: Message):
     await edit_or_reply(
         message,
