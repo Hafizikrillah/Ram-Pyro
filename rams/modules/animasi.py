@@ -856,7 +856,7 @@ async def helikopter(client: Client, message: Message):
     )
 
 
-@pyram("tembak", "")
+@pyram("tembak", ram)
 async def dornembak(client: Client, message: Message):
     await edit_or_reply(
         message,
@@ -864,7 +864,7 @@ async def dornembak(client: Client, message: Message):
     )
 
 
-@pyram("bundir", "")
+@pyram("bundir", ram)
 async def ngebundir(client: Client, message: Message):
     await edit_or_reply(
         message,
@@ -885,7 +885,7 @@ async def ngebundir(client: Client, message: Message):
     )
 
 
-@pyram(["awk", "tawa"], "")
+@pyram(["awk", "tawa"], ram)
 async def awikwok(client: Client, message: Message):
     await edit_or_reply(
         message,
@@ -897,7 +897,7 @@ async def awikwok(client: Client, message: Message):
     )
 
 
-@pyram("y", .)
+@pyram("y", ram)
 async def ysaja(client: Client, message: Message):
     await edit_or_reply(
         message,
@@ -917,7 +917,7 @@ async def ysaja(client: Client, message: Message):
     )
 
 
-@pyram("tank", "")
+@pyram("tank", ram)
 async def tank(client: Client, message: Message):
     await edit_or_reply(
         message,
@@ -928,7 +928,7 @@ async def tank(client: Client, message: Message):
     )
 
 
-@pyram("babi", .)
+@pyram("babi", ram)
 async def babi(client: Client, message: Message):
     await edit_or_reply(
         message,
@@ -943,7 +943,7 @@ async def babi(client: Client, message: Message):
     )
 
 
-@pyram(["ajg", "anjing"], .)
+@pyram(["ajg", "anjing"], ram)
 async def anjg(client: Client, message: Message):
     await edit_or_reply(
         message,
@@ -956,7 +956,7 @@ async def anjg(client: Client, message: Message):
     )
 
 
-@pyram("nah", "")
+@pyram("nah", ram)
 async def nahlove(client: Client, message: Message):
     typew = await edit_or_reply(
         message, "`\n(\\_/)`" "`\n(●_●)`" "`\n />💖 *Ini Buat Kamu`"
@@ -965,7 +965,7 @@ async def nahlove(client: Client, message: Message):
     await typew.edit("`\n(\\_/)`" "`\n(●_●)`" "`\n💖<\\  *Tapi Bo'ong`")
 
 
-@pyram("santet", "")
+@pyram("santet", ram)
 async def santet(client: Client, message: Message):
     typew = await edit_or_reply(message, "`Mengaktifkan Perintah Santet Online....`")
     await asyncio.sleep(2)
